@@ -31,7 +31,7 @@ export const WeeklyView: React.FC = () => {
     };
 
     const handleCopyPrompt = async () => {
-        const promptText = `Por favor, extrae los horarios y devuelve SOLAMENTE el siguiente formato JSON, sin texto adicional:
+        const promptText = `Por favor, extrae los horarios y devuelve SOLAMENTE el siguiente formato JSON, sin texto adicional. IMPORTANTE: OMITE cualquier curso o actividad que no tenga días o un horario específico asignado.
 
 [
   {
