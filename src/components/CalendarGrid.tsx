@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useCalendar, CalendarEvent } from '../context/CalendarContext';
+import React from 'react';
+import { useCalendar } from '../context/CalendarContext';
 import { getMonthMatrix } from '../utils/dateUtils';
 import { format, isSameDay, isSameMonth } from 'date-fns';
 import { es } from 'date-fns/locale';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { CalendarProvider } from './context/CalendarContext';
 import { WeeklyView } from './components/WeeklyView';
 import { EventModal } from './components/EventModal';

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useCalendar, CalendarEvent } from '../context/CalendarContext';
 import { X, Clock, AlignLeft, Check, CalendarDays } from 'lucide-react';
 import { format, setHours, setMinutes, getDay } from 'date-fns';
-import { es } from 'date-fns/locale';
 
 const colors = [
     'blue',
@@ -66,7 +65,6 @@ export const EventModal: React.FC = () => {
         e.preventDefault();
 
         let startTimestamp = state.selectedDate || Date.now();
-        let endTimestamp = state.selectedDate ? state.selectedDate + 3600000 : Date.now() + 3600000;
 
         // Parse time inputs
         const [startH, startM] = startTime.split(':').map(Number);
